@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.PersonOverviewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonOverviewController">
    <children>
       <SplitPane dividerPositions="0.29797979797979796" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -63,15 +63,15 @@
                     <buttons>
                         <ButtonBar prefHeight="40.0" prefWidth="200.0">
                           <buttons>
-                            <Button minWidth="50.0" mnemonicParsing="false" prefHeight="26.0" text="New..." />
+                            <Button minWidth="50.0" mnemonicParsing="false" onAction="#handleNewPerson" prefHeight="26.0" text="New..." />
                           </buttons>
                         </ButtonBar>
                         <ButtonBar prefHeight="40.0" prefWidth="200.0">
                           <buttons>
-                            <Button minWidth="50.0" mnemonicParsing="false" prefHeight="26.0" text="Edit..." />
+                            <Button minWidth="50.0" mnemonicParsing="false" onAction="#handleEditPerson" prefHeight="26.0" text="Edit..." />
                           </buttons>
                         </ButtonBar>
-                      <Button minWidth="50.0" mnemonicParsing="false" prefHeight="26.0" text="Delete" />
+                      <Button minWidth="50.0" mnemonicParsing="false" onAction="#handleDeletePerson" prefHeight="26.0" text="Delete" />
                     </buttons>
                   </ButtonBar>
                </children>
