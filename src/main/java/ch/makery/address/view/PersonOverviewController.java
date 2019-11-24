@@ -121,7 +121,7 @@ private void handleEditPerson() {
     */
     public void setMainApp(MainApp mainApp) {
         // Add observable list data to the table
-        personTable.setItems(mainApp.getPersonData());
+        personTable.setItems(MainApp.getPersonData());
     }
     /**
     * Fills all text fields to show details about the person.

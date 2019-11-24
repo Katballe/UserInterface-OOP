@@ -125,11 +125,11 @@ public class MainApp extends Application {
  * @param person the person object to be edited
  * @return true if the user clicked OK, false otherwise.
  */
-public boolean showPersonEditDialog(Person person) {
+public static boolean showPersonEditDialog(Person person) {
     try {
         // Load the fxml file and create a new stage for the popup dialog.
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(MainApp.class.getResource("view/PersonEditDialog.fxml"));
+        loader.setLocation(MainApp.class.getResource("/view/PersonEditDialog.fxml"));
         AnchorPane page = (AnchorPane) loader.load();
 
         // Create the dialog Stage.
@@ -160,7 +160,7 @@ public boolean showPersonEditDialog(Person person) {
      * 
      * @return
      */
-    public Stage getPrimaryStage() {
+    public static Stage getPrimaryStage() {
         return primaryStage;
     }
     
